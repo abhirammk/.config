@@ -63,16 +63,16 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 
 -- CLIPBOARD -- (for yanky)
 -- Mac users delete to avoid "target string not available" error
-vim.g.clipboard = {
-  name = "xsel_override",
-  copy = {
-    ["+"] = "xsel --input --clipboard",
-    ["*"] = "xsel --input --primary",
-  },
-  paste = {
-    ["+"] = "xsel --output --clipboard",
-    ["*"] = "xsel --output --primary",
-  },
-  cache_enabled = 1,
-}
+--vim.g.clipboard = {
+--  name = "xsel_override",
+--  copy = {
+--   ["+"] = "xsel --input --clipboard",
+--    ["*"] = "xsel --input --primary",
+--  },
+--  paste = {
+--    ["+"] = "xsel --output --clipboard",
+--    ["*"] = "xsel --output --primary",
+--  },
+--  cache_enabled = 1,
+--}
 
