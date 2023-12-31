@@ -21,6 +21,12 @@ snippet customthm "Custom Theorem" b
 	\end{Answer}
 #
 
+# mathbb
+snippet mbb "Mathbb" b
+	\mathbb{$1} $0
+#
+
+
 
 # factoidbox enviornment
 snippet factoidbox "Factoid Box" b
@@ -58,10 +64,30 @@ snippet up "Use Package" b
 #
 
 # \begin{}...\end{}
-snippet begin "Begin End"
+snippet beg "Begin End"
 	\begin{${1:env}}
 		${2:${VISUAL}}
-	\end{$1}${0}
+	\end{${1:env}}${0}
+#
+# Align
+snippet al "Align Env" b
+	\begin{align}
+		\label{${2:name}}
+		${1}
+	\end{align} $0
+#
+
+# Align
+snippet als "Align Env" b
+	\begin{align*}
+		\label{${2:name}}
+		${1}
+	\end{align*} $0
+#
+
+# Align
+snippet ds "Displaystyle" b
+	$ \displaystyle ${1} $ $0
 #
 
 # Align(ed)
@@ -108,6 +134,11 @@ snippet item "Itemize" b
 #Item
 snippet i "Item"
 	\item[${1:\it} ${2:Label:}] ${0}
+#
+
+#Item
+snippet mm "Mathmode"
+ 	$ ${1} $ $0
 #
 
 # Cases
